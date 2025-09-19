@@ -301,6 +301,7 @@
       "properties" : {
         "Store State" : "Do not store state",
         "canonical-value-lookup-cache-size" : "100",
+        "mime.type" : "appication/json",
         "key" : "${kafka.key:jsonPath('$.payload.acct_num')}"
       },
       "propertyDescriptors" : {
@@ -323,6 +324,13 @@
           "dynamic" : false,
           "identifiesControllerService" : false,
           "name" : "canonical-value-lookup-cache-size",
+          "sensitive" : false
+        },
+        "mime.type" : {
+          "displayName" : "mime.type",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "mime.type",
           "sensitive" : false
         },
         "Stateful Variables Initial Value" : {
